@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajude Gatinhos com Esporotricose</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0ec;
+      color: #333;
+    }
+    header {
+      background-color: #8c7b75;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    nav {
+      background: #a19691;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      background-color: #8c7b75;
+    }
+    nav a:hover {
+      background-color: #7b6e68;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #6a5e58;
+    }
+    #gatinho {
+      text-align: center;
+      margin: 30px auto;
+    }
+    #gatinho img {
+      width: 160px;
+      cursor: pointer;
+    }
+    #fala-gato {
+      margin-top: 15px;
+      font-style: italic;
+      color: #555;
+    }
+    footer {
+      background-color: #8c7b75;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .qrcode {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .qrcode img {
+      width: 200px;
+      border: 3px solid #ccc;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ajude Gatinhos com Esporotricose 🐱</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#ajuda">Como Ajudar</a>
+    <a href="#pix">PIX</a>
+    <a href="#transparencia">Transparência</a>
+    <a href="#novidades">Novidades</a>
+  </nav>
+
+  <section id="gatinho">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Gatinho Falante" onclick="gatinhoFala()" />
+    <div id="fala-gato">Clique no gatinho para ele te contar algo 🐾</div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a Esporotricose</h2>
+    <p>A esporotricose é uma doença causada por fungos que afeta muitos gatinhos em São Leopoldo. Com o seu apoio, conseguimos tratá-los e dar qualidade de vida enquanto lutam pela recuperação.</p>
+  </section>
+
+  <section id="ajuda">
+    <h2>Como Você Pode Ajudar</h2>
+    <ul>
+      <li>Contribua com qualquer valor</li>
+      <li>Doe ração, toalhas, caminhas ou medicamentos</li>
+      <li>Compartilhe a campanha com outras pessoas</li>
+    </ul>
+  </section>
+
+  <section id="pix">
+    <h2>Doação via PIX</h2>
+    <p>Use o QR Code abaixo ou copie a chave:</p>
+    <p><strong>PIX: ajudegatos@protetores.com</strong></p>
+    <div class="qrcode">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/QR_Code_Example.svg" alt="QR Code PIX">
+    </div>
+  </section>
+
+  <section id="transparencia">
+    <h2>Transparência</h2>
+    <p>Todos os valores recebidos e gastos serão publicados com comprovantes para garantir confiança e respeito.</p>
+  </section>
+
+  <section id="novidades">
+    <h2>Fotos e Novidades</h2>
+    <p>Logo você verá atualizações com fotos, histórias e melhoras dos nossos gatinhos.</p>
+  </section>
+
+  <footer>
+    <p>💜 Obrigada por ajudar a transformar a vida dos nossos peludos. Eles agradecem com muitos ronrons!</p>
+  </footer>
+
+  <script>
+    const falas = [
+      "Oi! Você sabia que a esporotricose é perigosa, mas tem cura?",
+      "Ajude com qualquer valor, sua doação salva vidas!",
+      "Eu e meus amiguinhos agradecemos muuuito sua ajuda! 💜",
+      "Comprovantes das doações ficam disponíveis pra todo mundo ver.",
+      "Compartilhar esse site com alguém já é uma baita ajuda!"
+    ];
+    function gatinhoFala() {
+      const fala = falas[Math.floor(Math.random() * falas.length)];
+      document.getElementById("fala-gato").innerText = fala;
+    }
+  </script>
+</body>
+</html>
